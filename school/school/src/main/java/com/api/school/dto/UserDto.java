@@ -6,12 +6,15 @@ public class UserDto {
 
     private String name;
 
-    private String age;
+    private int age;
 
-    public UserDto(Long id, String name, int age) {
+    private int tell;
+
+    public UserDto(Long id, String name, int age, int tell) {
         this.id = id;
         this.name = name;
-        this.age = String.valueOf(age);
+        this.age = age;
+        this.tell = tell;
     }
 
     public Long getId() {
@@ -30,11 +33,18 @@ public class UserDto {
         this.name = name;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public Integer getTell() {
+        return tell;
+    }
+    public void setTell(int tell) {
+        this.tell = tell;
     }
 }
