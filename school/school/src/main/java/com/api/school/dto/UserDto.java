@@ -6,12 +6,12 @@ public class UserDto {
 
     private String name;
 
-    private String email;
+    private String age;
 
-    public UserDto(Long id, String name, String email) {
+    public UserDto(Long id, String name, int age) {
         this.id = id;
         this.name = name;
-        this.email = email;
+        this.age = String.valueOf(age);
     }
 
     public Long getId() {
@@ -30,11 +30,11 @@ public class UserDto {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getAge() {
+        return age;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAge(String age) {
+        this.age = age;
     }
 }
